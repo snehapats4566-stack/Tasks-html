@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Component Based Styling</title>
+
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ac26a;
+            --text-color: white;
+            --card-padding: 20px;
+            --border-radius: 10px;
+        }
+        .card {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: var(--card-padding);
+            margin: 20px;
+            border-radius: var(--border-radius);
+            width: 250px;
+        }
+        body {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>This is first card using CSS variables.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>This is second card using same CSS variables.</p>
+    </div>
+</body>
+</html>

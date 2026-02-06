@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spacing System</title>
+
+<style>
+:root {
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 40px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.section {
+    background: #c61095;
+    margin: var(--space-lg);
+    padding: var(--space-md);
+    border-radius: 10px;
+}
+
+.box {
+    background: white;
+    padding: var(--space-sm);
+    margin-top: var(--space-sm);
+}
+</style>
+</head>
+
+<body>
+
+<div class="section">
+    Section
+    <div class="box">Box Inside</div>
+</div>
+
+<div class="section">
+    Another Section
+    <div class="box">Box Inside</div>
+</div>
+
+</body>
+</html>
